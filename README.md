@@ -1,92 +1,157 @@
-# Larry Wigington
+import React from 'react';
+export default function PersonalWebsite() {
+return (
+<div style={{
+fontFamily: 'Arial, sans-serif',
+lineHeight: '1.6',
+margin: 0,
+padding: '2rem',
+backgroundColor: '#fff',
+color: '#333'
+}}>
+<header style={{
+display: 'flex',
+justifyContent: 'space-between',
+alignItems: 'flex-start',
+marginTop: '5rem',
+marginBottom: '3rem',
+maxWidth: '18cm',
+margin: '5rem auto 3rem auto'
+}}>
+<div style={{
+display: 'flex',
+marginTop: '1.5rem',
+flexDirection: 'column'
+}}>
+<h1 style={{
+fontSize: '2.5rem',
+margin: 0,
+lineHeight: '1.1'
+}}>Larry Wigington</h1>
+<p style={{
+marginTop: '10px',
+fontSize: '1.2rem',
+color: '#333'
+}}>PhD Student, Operations Research, Naval Postgraduate School</p>
+</div>
+<div style={{
+width: '160px',
+height: '160px',
+borderRadius: '50%',
+backgroundColor: '#007BFF',
+display: 'flex',
+alignItems: 'center',
+justifyContent: 'center',
+color: 'white',
+fontSize: '4rem',
+fontWeight: 'bold'
+}}>LW</div>
+</header>
+<main style={{ maxWidth: '18cm', margin: '0 auto' }}>
+    <nav style={{ marginBottom: '1.5rem' }}>
+      <ul style={{
+        listStyleType: 'none',
+        padding: 0,
+        marginTop: '2rem'
+      }}>
+        <li style={{
+          display: 'inline-block',
+          marginRight: '1rem',
+          paddingBottom: '20px'
+        }}>
+          <a href="mailto:lwwiging@nps.edu" style={{
+            textDecoration: 'none',
+            color: '#007BFF',
+            fontWeight: 'bold'
+          }}>Email me ↗</a>
+        </li>
+        <li style={{
+          display: 'inline-block',
+          marginRight: '1rem',
+          paddingBottom: '20px'
+        }}>
+          <a href="https://github.com/larrywigington" target="_blank" style={{
+            textDecoration: 'none',
+            color: '#007BFF',
+            fontWeight: 'bold'
+          }}>GitHub ↗</a>
+        </li>
+        <li style={{
+          display: 'inline-block',
+          marginRight: '1rem',
+          paddingBottom: '20px'
+        }}>
+          <a href="https://www.linkedin.com/in/larrywigington" target="_blank" style={{
+            textDecoration: 'none',
+            color: '#007BFF',
+            fontWeight: 'bold'
+          }}>LinkedIn ↗</a>
+        </li>
+      </ul>
+    </nav>
 
-PhD Student in Operations Research | GPU-Accelerated Optimization | Naval Postgraduate School
+    <section style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+      <h1 style={{ fontSize: '1.8rem', marginTop: '1rem' }}>About</h1>
+      <p style={{ fontSize: '1rem', marginBottom: '1rem' }}>
+        I am a PhD student in Operations Research at the Naval Postgraduate School, 
+        advised by Robert Bassett. My research focuses on developing GPU-accelerated 
+        solvers for stochastic linear programs and large-scale optimization problems. 
+        I'm particularly interested in numerical linear algebra, distributed scientific 
+        computing, and building educational platforms that make complex mathematical 
+        concepts accessible through visualization.
+      </p>
+    </section>
 
----
+    <section style={{ marginBottom: '2rem' }}>
+      <h2 style={{ fontSize: '1.5rem' }}>Publications & Presentations</h2>
+      <ul style={{ fontSize: '1rem', marginBottom: '1rem', paddingLeft: '1.2rem' }}>
+        <li style={{ marginBottom: '1rem' }}>
+          L. Wigington. Solving Stochastic Programs with GPUs: A Literature Review.
+          <em> International Conference on Stochastic Programming (ICSP)</em>, 2025. <br />
+          <span style={{ fontSize: '0.9rem' }}>
+            📊 <a href="#" style={{ color: '#007BFF', textDecoration: 'none' }}>Slides</a>
+          </span>
+        </li>
+        <li style={{ marginBottom: '1rem' }}>
+          L. Wigington. Solving Stochastic Linear Programs on GPUs.
+          <em> SIAM Northern and Central California Sectional Conference (NCC25)</em>, 2025. <br />
+          <span style={{ fontSize: '0.9rem' }}>
+            📊 <a href="#" style={{ color: '#007BFF', textDecoration: 'none' }}>Poster</a>
+          </span>
+        </li>
+      </ul>
+    </section>
 
-## About Me
+    <section style={{ marginBottom: '2rem' }}>
+      <h2 style={{ fontSize: '1.5rem' }}>Software</h2>
+      <p style={{ fontSize: '1rem', marginBottom: '1rem' }}>
+        I actively contribute to open-source projects in Python, CUDA, and the scientific computing ecosystem. 
+        Notable projects include <a href="https://github.com/larrywigington/terminal-assistant" target="_blank" style={{ color: '#007BFF' }}>Terminal Assistant</a>, 
+        an Ollama-based CLI tool for terminal commands, <a href="https://github.com/larrywigington/nla-visualize" target="_blank" style={{ color: '#007BFF' }}>NLA-Visualize</a> for 
+        animated GPU/CPU visualizations of numerical algorithms, and <a href="https://github.com/larrywigington/nla-teaching-notebooks" target="_blank" style={{ color: '#007BFF' }}>NLA-Teaching-Notebooks</a> featuring 
+        educational Jupyter notebooks with clear theory and reproducible examples.
+      </p>
+    </section>
 
-I'm a PhD student in Operations Research at the Naval Postgraduate School, where I focus on **GPU-accelerated optimization**, **numerical linear algebra**, and **distributed scientific computing**. My research sits at the intersection of computational mathematics and high-performance computing, with a goal of making large-scale optimization problems tractable through modern hardware acceleration.
+    <section style={{ marginBottom: '2rem' }}>
+      <h2 style={{ fontSize: '1.5rem' }}>Teaching</h2>
+      <p style={{ fontSize: '1rem', marginBottom: '1rem' }}>
+        I am passionate about making complex mathematical concepts accessible through 
+        clear explanations and interactive visualizations. I develop educational 
+        materials and contribute to open-source teaching resources in optimization 
+        and numerical methods.
+      </p>
+    </section>
 
-Optimization isn't just about better answers — it's about better decisions, faster.
-
----
-
-## Research Interests
-
-- **GPU-Accelerated Optimization**: Developing efficient solvers for stochastic linear programs using CUDA and modern GPU architectures
-- **Numerical Linear Algebra**: Exploring computational methods for solving large-scale linear systems
-- **Distributed Scientific Computing**: Building scalable algorithms for parallel and distributed computing environments
-- **Educational Technology**: Creating interactive visualizations and teaching materials for computational mathematics
-
----
-
-## Current Projects
-
-### 🚀 GPU-Accelerated Solvers
-Developing high-performance solvers for stochastic linear programs and large-scale optimization problems using CUDA and GPU computing.
-
-### 📚 Educational Platforms
-Building open-source educational resources including:
-- **NLA-Visualize**: Animated GPU/CPU visualizations of numerical linear algebra and optimization algorithms
-- **NLA-Teaching-Notebooks**: Educational Jupyter Notebooks with clear theory, clean code, and reproducible examples
-
-### 🔧 Terminal Assistant
-A simple Ollama-based CLI tool designed to assist with terminal commands and coding questions, making command-line workflows more efficient.
-
----
-
-## Recent Activities
-
-### Speaking Engagements
-
-**International Conference on Stochastic Programming 2025** (Paris)  
-*Talk: "Solving Stochastic Programs with GPUs: A Literature Review"*
-
-**SIAM Northern and Central California Sectional Conference (NCC25)**  
-*Poster: "Solving Stochastic Linear Programs on GPUs"*
-
-### Writing
-
-I regularly write articles on GPU optimization, computational linear algebra, and distributed computing on my [personal website](https://www.larrywigington.com).
-
----
-
-## Open Source Contributions
-
-I'm actively contributing to open-source projects in the Python, CUDA, and scientific computing ecosystem. Check out my [GitHub profile](https://github.com/larrywigington) for current projects and contributions.
-
-I'm always open for collaboration — feel free to reach out through GitHub Discussions or Issues on any of my repositories.
-
----
-
-## Technical Skills
-
-**Languages**: Python, CUDA, C/C++, Julia  
-**Tools & Frameworks**: PyTorch, NumPy, SciPy, CuPy, Jupyter, Git  
-**Areas**: High-Performance Computing, GPU Programming, Optimization Algorithms, Numerical Methods
-
----
-
-## Connect
-
-- 🌐 [Personal Website](https://www.larrywigington.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/larrywigington)
-- 🐙 [GitHub](https://github.com/larrywigington)
-- 📬 Open to collaboration via GitHub Discussions and Issues
-
----
-
-## Selected Publications & Presentations
-
-*Coming soon — stay tuned for upcoming publications from my PhD research.*
-
----
-
-<div align="center">
-
-**"Optimization isn't just about better answers — it's about better decisions, faster."**
-
-*Last updated: January 2026*
-
+    <div style={{
+      marginTop: '3rem',
+      paddingTop: '2rem',
+      borderTop: '1px solid #eee',
+      textAlign: 'center',
+      fontStyle: 'italic',
+      color: '#666'
+    }}>
+      "Optimization isn't just about better answers — it's about better decisions, faster."
+    </div>
+  </main>
 </div>
