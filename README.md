@@ -106,7 +106,7 @@ Statistical analysis employing machine learning (neural networks) and genetic al
 - **LinkedIn:** [linkedin.com/in/larrywigington](https://www.linkedin.com/in/larrywigington)
 - **GitHub:** [github.com/larrywigington](https://github.com/larrywigington)
 - **Twitter/X:** [@larry_wigington](https://x.com/larry_wigington)
-- **Portfolio:** [larrywigington.github.io](https://larrywigington.github.io)
+- **Portfolio:** [www.larrywigington.com](https://www.larrywigington.com)
 
 ---
 
